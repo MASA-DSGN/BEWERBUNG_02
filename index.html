@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bewerbung - Ryan Bash Talent Acquisition Director</title>
+    <title>Bewerbung - Miguel Ángel Sánchez-Andrés</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            line-height: 1.8;
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
@@ -21,7 +21,7 @@
         }
         
         .container {
-            max-width: 900px;
+            max-width: 950px;
             margin: 0 auto;
             background: white;
             border-radius: 10px;
@@ -32,41 +32,128 @@
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 40px 20px;
+            padding: 40px;
             text-align: center;
         }
         
         .header h1 {
-            font-size: 2.5em;
+            font-size: 2.2em;
             margin-bottom: 10px;
+            font-weight: 700;
         }
         
         .header p {
-            font-size: 1.2em;
-            opacity: 0.9;
+            font-size: 1.1em;
+            opacity: 0.95;
         }
         
         .content {
             padding: 40px;
         }
         
-        .section {
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
             margin-bottom: 30px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .contact-info p {
+            margin: 8px 0;
+            font-size: 0.95em;
+        }
+        
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .employer-info {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #764ba2;
+        }
+        
+        .employer-info p {
+            margin: 6px 0;
+            font-size: 0.95em;
+        }
+        
+        .date {
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+        
+        .subject {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        .greeting {
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+            text-align: justify;
         }
         
         .section h2 {
             color: #667eea;
-            margin-bottom: 15px;
+            margin: 25px 0 15px 0;
+            font-size: 1.2em;
+            font-weight: 700;
             border-bottom: 2px solid #667eea;
-            padding-bottom: 10px;
+            padding-bottom: 8px;
+        }
+        
+        .section p {
+            margin-bottom: 12px;
+            line-height: 1.8;
         }
         
         .footer {
             background: #f8f9fa;
-            padding: 20px;
-            text-align: center;
-            color: #666;
+            padding: 30px 40px;
             border-top: 1px solid #ddd;
+        }
+        
+        .footer p {
+            margin: 8px 0;
+            font-size: 0.9em;
+        }
+        
+        .signature {
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .footer {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -74,23 +161,52 @@
     <div class="container">
         <div class="header">
             <h1>Bewerbung</h1>
-            <p>Ryan Bash - Talent Acquisition Director</p>
+            <p>AI Experience Designer – BCG X (Germany)</p>
         </div>
         
         <div class="content">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <p><strong>Miguel Ángel Sánchez-Andrés</strong></p>
+                <p>Alte Jakob Straße 120a, 10969 Berlin</p>
+                <p>+49 173 932 3464 | <a href="mailto:maiberlin@mein.gmx">maiberlin@mein.gmx</a></p>
+                <p>Portfolio: <a href="https://ai-assistant.company/" target="_blank">https://ai-assistant.company/</a></p>
+            </div>
+            
+            <!-- Employer Info -->
+            <div class="employer-info">
+                <p><strong>Boston Consulting Group GmbH</strong></p>
+                <p>BCG X Recruiting Team</p>
+                <p>Dircksenstraße 41</p>
+                <p>10178 Berlin</p>
+            </div>
+            
+            <!-- Date -->
+            <div class="date">Berlin, 9. Juni 2026</div>
+            
+            <!-- Subject -->
+            <div class="subject">Bewerbung als AI Experience Designer (m/w/d) – BCG X (Germany)</div>
+            
+            <!-- Main Content -->
+            <div class="greeting">Sehr geehrte Damen und Herren,</div>
+            
             <div class="section">
-                <h2>Willkommen</h2>
-                <p>Dies ist die Bewerbungsseite für die Position des Talent Acquisition Directors.</p>
+                <p>die erfolgreiche Implementierung künstlicher Intelligenz scheitert selten an der Konzeption, sondern an der anspruchsvollen Übersetzung komplexer Sprachmodelle (LLMs) in intuitive, skalierbare Benutzeroberflächen. Als Creative Technologist an der Schnittstelle von modernem Experience Design und angewandter generativer KI bewerbe ich mich als AI Experience Designer, um technologische Komplexität bei BCG X in messbaren Geschäftswert zu überführen.</p>
             </div>
             
             <div class="section">
-                <h2>Über diese Seite</h2>
-                <p>Diese Seite wurde mit GitHub Pages gehostet und ist öffentlich zugänglich.</p>
+                <p>Als proaktiver Produktgestalter löse ich diffuse geschäftliche Herausforderungen autonom und übersetze sie systematisch in strukturierte User Flows, barrierefreie Interaktionslogiken und zukunftsfähige Design-Systeme. Meine Qualifikationsschwerpunkte fügen sich nahtlos in die dynamischen Projektumgebungen von BCG X ein:</p>
+            </div>
+            
+            <div class="section">
+                <h2>AI-Native Prototyping & AI-Assisted Development</h2>
+                <p>Die gezielte Orchestrierung moderner Tools wie Lovable, Replit und Antigravity steigert meine Effizienz über den gesamten Design- und Implementierungszyklus. Die Validierung dieser agilen Methodik belegt mein funktionales KI-Ökosystem unter <a href="https://proactiva-neura-chat.lovable.app" target="_blank">proactiva-neura-chat.lovable.app</a></p>
             </div>
         </div>
         
         <div class="footer">
-            <p>&copy; 2026 Bewerbung. Alle Rechte vorbehalten.</p>
+            <p>Mit freundlichen Grüßen,</p>
+            <p class="signature">Miguel Ángel Sánchez-Andrés</p>
         </div>
     </div>
 </body>
