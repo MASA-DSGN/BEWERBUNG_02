@@ -8,14 +8,14 @@
         :root {
             --primary-color: #0f172a;
             --secondary-color: #334155;
-            --accent-color: #0891b2;
+            --accent-color: #0ea5e9; /* Cyan moderno para enfoque de IA */
             --text-color: #1e293b;
             --bg-color: #f8fafc;
             --card-bg: #ffffff;
         }
 
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: var(--text-color);
             background-color: var(--bg-color);
@@ -47,7 +47,7 @@
             font-size: 1.4rem;
             color: var(--primary-color);
             font-weight: 700;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.025em;
         }
 
         .sender-info p, .recipient-info p {
@@ -84,9 +84,9 @@
         .subject .subtitle {
             display: block;
             font-size: 1.05rem;
-            color: var(--accent-color);
-            margin-top: 5px;
-            font-weight: 600;
+            color: #475569;
+            margin-top: 6px;
+            font-weight: 500;
         }
 
         .content p {
@@ -94,12 +94,13 @@
             text-align: justify;
         }
 
-        .framework-showcase {
-            background-color: #f8fafc;
+        .showcase-block {
+            background-color: #fdfdfd;
             border-left: 4px solid var(--accent-color);
             padding: 20px;
             border-radius: 0 6px 6px 0;
             margin: 25px 0;
+            box-shadow: inset 0 0 8px rgba(0,0,0,0.01);
         }
 
         .key-points {
@@ -143,7 +144,7 @@
     <div class="container">
         <header>
             <div class="sender-info">
-                <h1>Miguel Ángel Sánchez-Andrés</h1>
+                <h1>MIGUEL ÁNGEL SÁNCHEZ-ANDRÉS</h1>
                 <p>Alte Jakob Straße 120a, 10969 Berlin</p>
                 <p>+49 173 932 3464 | maiberlin@mein.gmx</p>
                 <p class="links">Portfolio: <a href="https://ai-assistant.company/" target="_blank">https://ai-assistant.company/</a></p>
@@ -163,18 +164,18 @@
         <main class="content">
             <div class="subject">
                 Bewerbung als Senior Conversational UX Designer / AI Integration Specialist
-                <span class="subtitle">Fokus: Intelligente Kundeninteraktion & Conversational Ecosystems</span>
+                <span class="subtitle">Fokus: Intelligente Kundeninteraktion &amp; Conversational Ecosystems</span>
             </div>
 
             <p>Sehr geehrte Damen und Herren,</p>
 
-            <p>da statische Benutzeroberflächen selten adäquat auf individuelle Nutzeranfragen reagieren, verlassen ca. 68% der Besucher digitale Plattformen bereits in den ersten Sekunden. Die nachhaltige Lösung dieser Herausforderung liegt nicht in rein konzeptionellen Entwürfen, sondern in der Implementierung voll integrierter, intelligenter Interaktionssysteme.</p>
+            <p>da statische Benutzeroberflächen selten adäquat auf individuelle Nutzeranfragen reagieren, verlassen ca. [X%] der Besucher digitale Plattformen bereits in den ersten Sekunden. Die nachhaltige Lösung dieser Herausforderung liegt nicht in rein konzeptionellen Entwürfen, sondern in der Implementierung voll integrierter, intelligenter Interaktionssysteme.</p>
 
-            <div class="framework-showcase">
-                <p style="margin: 0;">Unter der Adresse <a href="https://ai-assistant.company/" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none;">https://ai-assistant.company/</a> präsentiere ich mein eigenständig entwickeltes Framework <strong>MASA Concierge</strong>. Dieses Projekt demonstriert die praxisnahe Verknüpfung von High-End-UX/UI mit marktreifen KI-Architekturen. Durch einbettbare, kontextsensitive Assistenten und automatisierte Trust-Workflows übersetzt dieses System digitale Interaktionen nachweisbar in Conversions.</p>
+            <div class="showcase-block">
+                <p style="margin: 0;">Unter der Adresse <a href="https://ai-assistant.company/" target="_blank" style="color: var(--primary-color); font-weight: 600; text-decoration: underline;">https://ai-assistant.company/</a> präsentiere ich mein eigenständig entwickeltes Framework <strong>MASA Concierge</strong>. Dieses Projekt demonstriert die praxisnahe Verknüpfung von High-End-UX/UI mit marktreifen KI-Architekturen. Durch einbettbare, kontextsensitive Assistenten und automatisierte Trust-Workflows übersetzt dieses System digitale Interaktionen nachweisbar in Conversions.</p>
             </div>
 
-            <p>Diese Expertise in der Orchestrierung von Large Language Models (LLMs), intelligenten Agenten-Schnittstellen und barrierefreien User Journeys möchte ich zielgerichtet in Ihr Unternehmen einbringen. Wertschöpfung und strategische Relevanz meines Profils für Ihre KI-Produktentwicklung zeichnen sich durch folgende Schwerpunkte aus:</p>
+            <p>Diese Expertise in der Orchestrierung von Large Language Models (LLMs), intelligenten Agenten-Schnittstellen und barrierefreien User Journeys möchte ich zielgerichtet in Ihr Unternehmen einbringen. Wertschöpfung und strategische Relevanz meines Profils für Ihre KI-Produktentwicklung:</p>
 
             <div class="key-points">
                 <div class="point-item">
@@ -182,11 +183,11 @@
                     Mein Live-Projekt (MASA Concierge) belegt, dass ich Conversational UX von der Konzeption bis zur produktiven Bereitstellung eigenständig realisiere. Ich steuere generative KI-Systeme präzise mittels optimierter Prompt-Strukturen und agiler Workflows.
                 </div>
                 <div class="point-item">
-                    <strong>UI/UX Design & Prototyping:</strong> 
+                    <strong>UI/UX Design &amp; Prototyping:</strong> 
                     Durch fundierte Kenntnisse in Screendesign, Figma-Animation und interaktivem Prototyping übersetze ich komplexe Markenidentitäten präzise in funktionale, generative Erlebnisse.
                 </div>
                 <div class="point-item">
-                    <strong>Audiovisuelle Synergien & Voice-User-Interfaces (VUI):</strong> 
+                    <strong>Audiovisuelle Synergien &amp; Voice-User-Interfaces (VUI):</strong> 
                     Meine Erfahrung in der Audioproduktion (M.A.S.A.) befähigt mich, akustische Schnittstellen logisch zu strukturieren und tonal präzise abzustimmen, um das Nutzervertrauen signifikant zu steigern.
                 </div>
             </div>
