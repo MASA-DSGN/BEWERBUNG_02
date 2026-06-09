@@ -5,206 +5,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bewerbung - Miguel Ángel Sánchez-Andrés</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --primary-color: #0f172a;
+            --secondary-color: #334155;
+            --accent-color: #0891b2;
+            --text-color: #1e293b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
         }
-        
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
             padding: 20px;
         }
-        
+
         .container {
-            max-width: 950px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-            overflow: hidden;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: 2.2em;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        
-        .header p {
-            font-size: 1.1em;
-            opacity: 0.95;
-        }
-        
-        .content {
-            padding: 40px;
-        }
-        
-        .contact-info {
-            background: #f8f9fa;
-            padding: 20px;
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 50px;
             border-radius: 8px;
-            margin-bottom: 30px;
-            border-left: 4px solid #667eea;
+            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
         }
-        
-        .contact-info p {
-            margin: 8px 0;
-            font-size: 0.95em;
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-        
-        .contact-info a {
-            color: #667eea;
+
+        .sender-info h1 {
+            margin: 0 0 10px 0;
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .sender-info p, .recipient-info p {
+            margin: 4px 0;
+            font-size: 0.95rem;
+            color: var(--secondary-color);
+        }
+
+        .links a {
+            color: var(--accent-color);
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
         }
-        
-        .contact-info a:hover {
+
+        .links a:hover {
             text-decoration: underline;
         }
-        
-        .employer-info {
-            background: #f0f4ff;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-            border-left: 4px solid #764ba2;
-        }
-        
-        .employer-info p {
-            margin: 6px 0;
-            font-size: 0.95em;
-        }
-        
+
         .date {
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: #667eea;
+            text-align: right;
+            margin-bottom: 35px;
+            color: #64748b;
+            font-size: 0.95rem;
         }
-        
+
         .subject {
-            font-size: 1.3em;
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 30px;
             font-weight: 700;
-            color: #333;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #667eea;
+            line-height: 1.4;
         }
-        
-        .greeting {
+
+        .subject .subtitle {
+            display: block;
+            font-size: 1.05rem;
+            color: var(--accent-color);
+            margin-top: 5px;
             font-weight: 600;
-            margin-bottom: 15px;
-            font-size: 1em;
         }
-        
-        .section {
-            margin-bottom: 25px;
+
+        .content p {
+            margin-bottom: 18px;
             text-align: justify;
         }
-        
-        .section h2 {
-            color: #667eea;
-            margin: 25px 0 15px 0;
-            font-size: 1.2em;
-            font-weight: 700;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 8px;
+
+        .framework-showcase {
+            background-color: #f8fafc;
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 0 6px 6px 0;
+            margin: 25px 0;
         }
-        
-        .section p {
-            margin-bottom: 12px;
-            line-height: 1.8;
-            font-size: 0.95em;
+
+        .key-points {
+            margin: 25px 0;
+            padding: 0;
         }
-        
-        .footer {
-            background: #f8f9fa;
-            padding: 30px 40px;
-            border-top: 1px solid #ddd;
+
+        .point-item {
+            margin-bottom: 20px;
+            text-align: justify;
         }
-        
-        .footer p {
-            margin: 8px 0;
-            font-size: 0.9em;
+
+        .point-item strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 4px;
+            font-size: 1.05rem;
         }
-        
+
         .signature {
-            margin-top: 20px;
-            font-weight: 600;
+            margin-top: 40px;
         }
-        
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 1.8em;
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+                margin: 10px auto;
             }
-            
-            .content {
-                padding: 20px;
+            header {
+                flex-direction: column;
+                gap: 15px;
             }
-            
-            .footer {
-                padding: 20px;
+            .date {
+                text-align: left;
             }
         }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <div class="header">
-            <h1>Bewerbung</h1>
-            <p>AI Experience Designer – BCG X (Germany)</p>
-        </div>
-        
-        <div class="content">
-            <div class="contact-info">
-                <p><strong>Miguel Ángel Sánchez-Andrés</strong></p>
+        <header>
+            <div class="sender-info">
+                <h1>Miguel Ángel Sánchez-Andrés</h1>
                 <p>Alte Jakob Straße 120a, 10969 Berlin</p>
-                <p>+49 173 932 3464 | <a href="mailto:maiberlin@mein.gmx">maiberlin@mein.gmx</a></p>
-                <p>Portfolio: <a href="https://ai-assistant.company/" target="_blank">https://ai-assistant.company/</a></p>
+                <p>+49 173 932 3464 | maiberlin@mein.gmx</p>
+                <p class="links">Portfolio: <a href="https://ai-assistant.company/" target="_blank">https://ai-assistant.company/</a></p>
             </div>
-            
-            <div class="employer-info">
-                <p><strong>Boston Consulting Group GmbH</strong></p>
-                <p>BCG X Recruiting Team</p>
-                <p>Dircksenstraße 41</p>
-                <p>10178 Berlin</p>
+            <div class="recipient-info">
+                <strong>An das Recruiting Team</strong>
+                <p>[Unternehmen Name]</p>
+                <p>[Straße und Hausnummer]</p>
+                <p>[PLZ und Ort]</p>
             </div>
-            
-            <div class="date">Berlin, 9. Juni 2026</div>
-            
-            <div class="subject">Bewerbung als AI Experience Designer (m/w/d) – BCG X (Germany)</div>
-            
-            <div class="greeting">Sehr geehrte Damen und Herren,</div>
-            
-            <div class="section">
-                <p>die erfolgreiche Implementierung künstlicher Intelligenz scheitert selten an der Konzeption, sondern an der anspruchsvollen Übersetzung komplexer Sprachmodelle (LLMs) in intuitive, skalierbare Benutzeroberflächen. Als Creative Technologist an der Schnittstelle von modernem Experience Design und angewandter generativer KI bewerbe ich mich als AI Experience Designer, um technologische Komplexität bei BCG X in messbaren Geschäftswert zu überführen.</p>
-            </div>
-            
-            <div class="section">
-                <p>Als proaktiver Produktgestalter löse ich diffuse geschäftliche Herausforderungen autonom und übersetze sie systematisch in strukturierte User Flows, barrierefreie Interaktionslogiken und zukunftsfähige Design-Systeme. Meine Qualifikationsschwerpunkte fügen sich nahtlos in die dynamischen Projektumgebungen von BCG X ein:</p>
-            </div>
-            
-            <div class="section">
-                <h2>AI-Native Prototyping & AI-Assisted Development</h2>
-                <p>Die gezielte Orchestrierung moderner Tools wie Lovable, Replit und Antigravity steigert meine Effizienz über den gesamten Design- und Implementierungszyklus. Die Validierung dieser agilen Methodik belegt mein funktionales KI-Ökosystem unter <a href="https://proactiva-neura-chat.lovable.app" target="_blank">proactiva-neura-chat.lovable.app</a></p>
-            </div>
+        </header>
+
+        <div class="date">
+            Berlin, 9. Juni 2026
         </div>
-        
-        <div class="footer">
-            <p>Mit freundlichen Grüßen,</p>
-            <p class="signature">Miguel Ángel Sánchez-Andrés</p>
-        </div>
+
+        <main class="content">
+            <div class="subject">
+                Bewerbung als Senior Conversational UX Designer / AI Integration Specialist
+                <span class="subtitle">Fokus: Intelligente Kundeninteraktion & Conversational Ecosystems</span>
+            </div>
+
+            <p>Sehr geehrte Damen und Herren,</p>
+
+            <p>da statische Benutzeroberflächen selten adäquat auf individuelle Nutzeranfragen reagieren, verlassen ca. 68% der Besucher digitale Plattformen bereits in den ersten Sekunden. Die nachhaltige Lösung dieser Herausforderung liegt nicht in rein konzeptionellen Entwürfen, sondern in der Implementierung voll integrierter, intelligenter Interaktionssysteme.</p>
+
+            <div class="framework-showcase">
+                <p style="margin: 0;">Unter der Adresse <a href="https://ai-assistant.company/" target="_blank" style="color: var(--accent-color); font-weight: 600; text-decoration: none;">https://ai-assistant.company/</a> präsentiere ich mein eigenständig entwickeltes Framework <strong>MASA Concierge</strong>. Dieses Projekt demonstriert die praxisnahe Verknüpfung von High-End-UX/UI mit marktreifen KI-Architekturen. Durch einbettbare, kontextsensitive Assistenten und automatisierte Trust-Workflows übersetzt dieses System digitale Interaktionen nachweisbar in Conversions.</p>
+            </div>
+
+            <p>Diese Expertise in der Orchestrierung von Large Language Models (LLMs), intelligenten Agenten-Schnittstellen und barrierefreien User Journeys möchte ich zielgerichtet in Ihr Unternehmen einbringen. Wertschöpfung und strategische Relevanz meines Profils für Ihre KI-Produktentwicklung zeichnen sich durch folgende Schwerpunkte aus:</p>
+
+            <div class="key-points">
+                <div class="point-item">
+                    <strong>Erfolgreiches AI Product Deployment:</strong> 
+                    Mein Live-Projekt (MASA Concierge) belegt, dass ich Conversational UX von der Konzeption bis zur produktiven Bereitstellung eigenständig realisiere. Ich steuere generative KI-Systeme präzise mittels optimierter Prompt-Strukturen und agiler Workflows.
+                </div>
+                <div class="point-item">
+                    <strong>UI/UX Design & Prototyping:</strong> 
+                    Durch fundierte Kenntnisse in Screendesign, Figma-Animation und interaktivem Prototyping übersetze ich komplexe Markenidentitäten präzise in funktionale, generative Erlebnisse.
+                </div>
+                <div class="point-item">
+                    <strong>Audiovisuelle Synergien & Voice-User-Interfaces (VUI):</strong> 
+                    Meine Erfahrung in der Audioproduktion (M.A.S.A.) befähigt mich, akustische Schnittstellen logisch zu strukturieren und tonal präzise abzustimmen, um das Nutzervertrauen signifikant zu steigern.
+                </div>
+            </div>
+
+            <p>Mein Ziel ist es, an der Schnittstelle von Design und Technologie Ihre Produktentwicklung mitzugestalten und Benutzeroberflächen mit messbarem strategischem Mehrwert zu etablieren. Gerne erläutere ich Ihnen im persönlichen oder virtuellen Gespräch, wie ich Ihre KI-Roadmap technologisch und gestalterisch beschleunigen kann. Über eine Terminabsprache freue ich mich.</p>
+
+            <div class="signature">
+                <p>Mit freundlichen Grüßen,</p>
+                <br>
+                <strong>Miguel Ángel Sánchez-Andrés</strong>
+            </div>
+        </main>
     </div>
+
 </body>
 </html>
